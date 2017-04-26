@@ -119,6 +119,6 @@ cf_upload: publish
 
 github: publish
 	ghp-import -m "Generate Pelican site" $(OUTPUTDIR)
-	git push git@github.com:aleneum/alneum.github.io.git gh-pages:master
+	git push https://github.com/aleneum/aleneum.github.io.git gh-pages:master
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
